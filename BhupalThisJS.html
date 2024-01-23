@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This keyword basics !</title>
+  </head>
+  <body>
+    <input
+      type="button"
+      value="button"
+      onclick="this.style.background= 'red' , this.style.color='white'"
+    />
+    <script>
+      //let display = console.log(typeof this);
+      // document.write(display);
+      var a = 10;
+      console.log(this);
+      /*function add(){
+        console.log(this);
+      }
+      add();*/
+      console.log(a);
+      var obj = {
+        animal: "Cow",
+        work: function abc() {
+          console.log(this.animal);
+        },
+      };
+      obj.work();
+    </script>
+  </body>
+</html>

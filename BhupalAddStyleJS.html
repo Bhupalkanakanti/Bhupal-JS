@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Styles from JavaScript</title>
+    <style>
+      #Bhupal {
+        color: red;
+        background-color: yellow;
+      }
+      #col {
+        height: 100px;
+        width: 150px;
+      }
+      #p1 {
+        background-color: rgb(255, 0, 13);
+      }
+      .one {
+        color: pink;
+      }
+      .two {
+        border: 10px black solid;
+      }
+      .three {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="col">
+      <p id="p1">New text added for the paragraph</p>
+      <img src="Nature.jpg" alt="" />
+
+      <img alt="" src="Nature.jpg" />
+    </div>
+    <div class="one two">
+      <h3 id="h2">Hi all this is the message from Heading 3!</h3>
+    </div>
+    <script>
+      var ele = document.getElementById("col");
+      ele.style.color = "black";
+      //console.log(ele.style);
+      console.log(ele.getAttribute("id"));
+      var new1 = ele.setAttribute("id", "Bhupal");
+      console.log(ele.getAttribute("id"));
+      var store = document.getElementById("h2");
+      store.classList.add("three");
+    </script>
+  </body>
+</html>

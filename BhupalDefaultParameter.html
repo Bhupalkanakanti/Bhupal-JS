@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Default parameters in JS.</title>
+  </head>
+  <body>
+    <script>
+      //Default Parameters in JS.   
+      function Product(Num1 = 9, Num2, ...n) {
+        result = Num1 + Num2;
+        console.log("First : " + result);
+        for (n1 of n) {
+          result = result + n1;
+          console.log(result);
+        }
+        return result;
+      }
+      console.log(Product(2, 3, 4, 5, 6));
+    </script>
+  </body>
+</html>

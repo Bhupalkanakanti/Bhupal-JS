@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Map In Javascript
+    </title>
+</head>
+
+<body>
+    <div id="maps">
+        <p>
+            Hai this is class about Maps in the Javascript.
+        </p>
+    </div>
+    <script>
+        var maps = [];
+        array1 = [10, 20, 30, 40];
+        maps = array1.map(function(ele, index, arr) {
+            //  let values = ele * 19;
+            return ele;
+        });
+        console.table(maps);
+        console.log(maps);
+        /*
+
+        Here the map method is used to do the logic on every element in an array same like forEach method.
+        This is also gives 3 parameter values in the function.
+        element, index & complete array info.
+        Here the MAP method is operated with the return statement.
+        But in ForEach method we no need to give return statement.
+
+         */
+    </script>
+</body>
+
+</html>

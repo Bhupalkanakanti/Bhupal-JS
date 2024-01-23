@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Model</title>
+    <style>
+        #firstDiv {
+            color: red;
+            padding-left: 300px;
+        }
+        
+        #SecondDiv {
+            color: blue;
+        }
+        
+        #ThirdDiv {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="one">This is first H2 tag in HTML!</h2>
+    <h2 id="two">This is second H2 tag in HTML!</h2>
+    <div id="bhupal">
+        <p id="p1">
+            This is the first paragraph that is written in the bhupal class!
+        </p>
+        <p id="p2">
+            This is the first paragraph that is written in the bhupal class! romovable paragraph
+        </p>
+        <p id="p3">
+            This is the first paragraph that is written in the bhupal class!
+        </p>
+    </div>
+    <div class="bhupal1">
+        <p>This is the Second paragraph that is written in the bhupal class!</p>
+    </div>
+    <h2 class="bhupal2">
+        This is the heading that is using h2 with bhupal class!
+    </h2>
+    <div id="firstDiv">
+        <p>First Paragraph that is in FirstDiv</p>
+    </div>
+    <div id="SecondDiv">
+        <p>Second Paragraph that is in FirstDiv</p>
+    </div>
+    <div id="ThirdDiv">
+        <p>Third Paragraph that is in FirstDiv</p>
+    </div>
+    <script>
+        /*let tag = document.getElementById("two");
+                              console.log(tag);
+                              let classtags = document.getElementsByClassName("bhupal");
+                              console.log(classtags);
+                              let tagname = document.getElementsByTagName("h2");
+                              console.log(tagname);
+                              let queryselector = document.querySelector(".class/#id/tagname"); //returns the first match item.
+                              console.log(queryselector);
+                              let queryselectorAll = document.querySelectorAll(".class/#id/tagname"); //returns all the match item.
+                              console.log(queryselectorAll);*/
+
+        var create = document.createElement("p");
+        create.innerText =
+            "This is the paragraph that added from the paragraph tags all ";
+        //console.log(create);
+        var parent = document.getElementById("bhupal");
+        //console.log(parent);
+        var childtag = document.getElementById("p3");
+        //console.log(childtag);
+        parent.insertBefore(create, childtag);
+        // console.log(tag.innerHTML);
+        //console.log(tag.innerText);
+        //parent.remove();
+        parent.removeChild(childtag);
+        childtag.replaceWith(create);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>For in vs For of</title>
+  </head>
+
+  <body>
+    <script>
+      var bhupal = "Java Script";
+      document.write(`Hello ${bhupal} World`);
+      document.write(`<br >`);
+
+      var fruits = ["Apple", "Banana", "carrot", "Dry fruits", "flower"];
+      //For In and For of loops explantion in JS.
+
+      for (indexs in fruits) {
+        document.write("Value at " + indexs + " : " + fruits[indexs] + "<br>");
+      }
+      var students = {
+        details: {
+          Name: "Bhupal",
+          Age: 26,
+          college: "Saveetha",
+          Det: { Name: "Raju", age: 26, college: "Saveetha" },
+        },
+      };
+      var simple = { Name: "Bhupal", Age: "26", Place: "Chinnamandem" };
+      console.log(simple.Age);
+      for (keys in simple) {
+        document.write(
+          "The keys are : " + keys + " Value is " + simple[keys] + "<br>"
+        );
+      }
+      for (values in simple) {
+        document.write(
+          "The keys are : " + values + " Value is " + simple[values] + "<br>"
+        );
+        console.log(values);
+      }
+      var my = Object.values(simple);
+      console.log(my);
+      var my2 = Object.keys(simple);
+      console.log(my2);
+    </script>
+  </body>
+</html>

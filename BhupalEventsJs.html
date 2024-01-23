@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events in JS.</title>
+    <style></style>
+</head>
+
+<body id="back">
+    <div>
+        <button id="Color">Change Color</button>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <script>
+        var fn = document.getElementById("Color");
+
+
+        setTimeout(Colorchange, 3000);
+
+        function Colorchange() {
+            fn.style.backgroundColor = "Black";
+            console.log(this);
+        }
+        /*
+we can perform 3 ways for the event handling
+1. Inline 
+2. Event properties in the java script
+3. using addEventlistener method
+    Also in the add Event Listener method we are having the major benifits with THIS keyword and event information.
+    Actually the event information is default in the function , if we want to use then we can use or else no need.
+
+
+        */
+    </script>
+</body>
+
+</html>

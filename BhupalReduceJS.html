@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Reduce method in java script with arrays.
+    </title>
+</head>
+
+<body>
+    <script>
+        var arrreduce = [13, 14, 15, 16];
+        var results = arrreduce.reduce(function(acc, ele) {
+            if (acc < ele) {
+                return acc
+            } else {
+                return ele;
+            }
+        }, arrreduce[0]);
+        console.log(results);
+    </script>
+</body>
+
+</html>

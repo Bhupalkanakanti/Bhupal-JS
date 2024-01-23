@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>For Each Notes </title>
+</head>
+
+<body>
+    <script>
+        var forloop = ['Bhupal', 'Jeevan', 'Sathish', 'Praveen'];
+        var newarray = forloop.forEach(function bhupalfun(forloopItem, index, arr) {
+            console.log(forloopItem);
+            console.log(index);
+            console.log(arr);
+
+            return forloopItem;
+        });
+
+        /* function bhupalfun1(forloopItem, index, arr) {
+             console.log(forloopItem);
+             console.log(index);
+             console.log(arr);
+         }*/
+        console.log(" New foreach loop method : " + newarray);
+    </script>
+</body>
+
+</html>
